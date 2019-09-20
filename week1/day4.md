@@ -1,0 +1,270 @@
+
+# Day 4
+
+### Functions
+
+```javascript
+// define a function
+function doCoolThing() {
+  console.log("done cool thing!");
+}
+
+// call a function
+doCoolThing(); // prints out "done cool thing!"
+```
+
+### Arrays and Objects
+
+- same underneath
+- `{0:'a', 1:'b', 2:'c'}` is like `['a','b','c']`
+- array methods
+
+### Functional Programming
+
+- Why is functional programming good?
+
+  - Small modules can be coded quickly and easily.
+  - General purpose modules can be reusable, which leads to faster development of next programs.
+  - The modules of a program can be tested independently, helping to reduce the time spent debugging.
+
+- callbacks
+
+```JavaScript
+var add = function(a, b, doSomething){
+   doSomething(a+b)
+}
+
+add(1, 2, function(x){
+  console.log(`the result is ${x}`)
+})
+//prints out 3
+```
+
+- forEach
+
+```javascript
+var people = ["harry", "sat", "matt", "frances", "matt"];
+
+function convertToUpperCase(string) {
+  return string.toUpperCase();
+}
+people.forEach(convertToUpperCase);
+
+// forEach visits each item in the array and mutates the array directly
+
+console.log(people); // ["HARRY", "SAT", "MATT", "FRANCES", "matt"]
+```
+
+- map
+
+```javascript
+var people = ["harry", "sat", "matt", "frances", "matt"];
+
+function convertToUpperCase(string) {
+  return string.toUpperCase();
+}
+var capitalisedPeople = people.map(convertToUpperCase);
+
+// map returns an array which is stored in capitalisedPeople
+console.log(people); //["harry", "sat", "matt", "frances", "matt"]
+console.log(capitalisedPeople); // ["HARRY", "SAT", "MATT", "FRANCES", "matt"]
+```
+
+- filter
+
+```javascript
+var people = ["harry", "sat", "matt", "frances", "matt"];
+
+function isPersonNotCalledHarry(string) {
+  return string !== "harry";
+}
+
+var peopleNotCalledHarry = people.filter(isPersonNotCalledHarry);
+
+// filter returns array of all items for the callback function resolves to true
+//peopleNotCalledHarry = ["sat", "matt", "frances", "matt"]
+```
+
+- reduce
+
+```javascript
+var numbers = [1, 2, 3, 4, 5];
+
+function add(total, current) {
+  return total + current;
+}
+
+var numbersTotal = numbers.reduce(add, 0);
+
+console.log(numbersTotal); // 15
+```
+
+- mutible/immutible
+- filtering array
+- chaining functions
+
+```javascript
+var list = [1, 5, 6, 7, 2, 3, 4, 8, 9, 10];
+
+function add1(num) {
+  return num + 1;
+}
+function isGreaterThanFive(num) {
+  return num < 5;
+}
+
+// works because map returns you an array which you can then chain another function onto
+var newList = list.map(add1).filter(isGreaterThanFive);
+```
+
+- Challenge
+  1. Keep only the force users, and return a new array of their names
+  2. Create a new array and into it -> If last name is "Skywalker", their shooting score add 10, else their shooting score minus 10
+
+```javascript
+var personnel = [
+  {
+    id: 5,
+    name: "Luke Skywalker",
+    pilotingScore: 98,
+    shootingScore: 56,
+    isForceUser: true
+  },
+  {
+    id: 82,
+    name: "Sabine Wren",
+    pilotingScore: 73,
+    shootingScore: 99,
+    isForceUser: false
+  },
+  {
+    id: 22,
+    name: "Zeb Orellios",
+    pilotingScore: 20,
+    shootingScore: 59,
+    isForceUser: false
+  },
+  {
+    id: 15,
+    name: "Ezra Bridger",
+    pilotingScore: 43,
+    shootingScore: 67,
+    isForceUser: true
+  },
+  {
+    id: 11,
+    name: "Caleb Dume",
+    pilotingScore: 71,
+    shootingScore: 85,
+    isForceUser: true
+  }
+];
+```
+
+### Default Paramters
+
+```javascript
+// instead of
+function getFullName(firstName, lastName) {
+  if (typeof firstName === "undefined") {
+    firstName = "first";
+  }
+  if (typeof lastName === "undefined") {
+    firstName = "last";
+  }
+  return firstName + " " + lastName;
+}
+
+// you can give default parameters like this
+
+function getFullName(firstName = "first", lastName = "last") {
+  return firstName + " " + lastName;
+}
+```
+
+### String Methods
+
+```javascript
+var name = "christiano ronaldo";
+
+name.split(" "); // ["christiano", "ronaldo"]
+name.split("istiano ronal"); // ["chris", "do"]
+name.split(""); // ["c","h","r","i","s","t","i","a","n","o"," ","r","o","n","a","l","d","o"]
+```
+
+### Spread Operator
+
+- for arrays
+
+```javascript
+var array = [1, 2, 3, 4, 5];
+
+var newArray = [...array, 6, 7, 8];
+
+console.log(newArray); // [1,2,3,4,5,6,7,8]
+```
+
+- for objects
+
+```javascript
+var luke = {
+  id: 5,
+  name: "Luke Skywalker",
+  pilotingScore: 98,
+  shootingScore: 56,
+  isForceUser: true
+};
+
+var newLuke = {
+  ...luke, // spreads out all of luke properties into newLuke
+  pet: "cat"
+};
+
+newLuke.id === 5; // true
+newLuke.pet === "cat"; // true
+```
+
+- variable name become key, value becomes value:
+
+```javascript
+var name = "Luke Skywalker";
+var isForcerUser = true;
+
+var luke = {
+  name,
+  isForceUser
+};
+
+luke.name === "Luke Skywalker"; // true
+```
+
+### Code Wars
+
+- sign up and start training
+- [codewars.com](https://www.codewars.com/);
+
+### DOM (document object model)
+
+```html
+<ul id="list">
+  <li class="listItem">dogs</li>
+  <li class="listItem">cats</li>
+  <li class="listItem">frog</li>
+  <li class="listItem">rats</li>
+  <li class="listItem">fish</li>
+</ul>
+
+<button onclick="doThing()">click to do thing</button>
+```
+
+```javascript
+var listItems = document.getElementsByClassName("listItem"); // node list of li
+
+var list = document.getElementById("list"); // ul element
+
+function doThing() {
+  console.log("done thing");
+}
+```
+
+### Make
