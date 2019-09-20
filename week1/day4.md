@@ -313,7 +313,9 @@ var list = document.getElementById("list"); //  returns the element with an id o
 var listItems = document.getElementsByClassName("listItem"); // returns a node list of things with a class of "listItem"
 ```
 
-- calling a function onclick
+- [All HTML Element Properties](https://www.w3schools.com/jsref/dom_obj_all.asp)
+
+### Calling a function onclick
 
 ```html
 <button onclick="doThing()">click to do thing</button>
@@ -326,8 +328,11 @@ function doThing() {
 }
 ```
 
+- [onclick attribute](https://www.w3schools.com/tags/ev_onclick.asp)
+
 ## Use DOM manipulation to bring Rock/Paper/Scissors to life
 
 - instead of printing the result to the console
 - use DOM manipulation to display it on the page
-- [All HTML Element Properties](https://www.w3schools.com/jsref/dom_obj_all.asp)
+- call functions with onclick attribute for interactivity
+  
