@@ -25,7 +25,7 @@
   - `git checkout <existingbranch>`
   - `git checkout -b <newbranchname>`
   - `git fetch -p`
-  - [Git Cheat Sheet]("/resources/atlassian-git-cheatsheet.pdf")
+  - [Git Cheat Sheet](../resources/atlassian-git-cheatsheet.pdf)
 - HTML
 
   - meta tags:
