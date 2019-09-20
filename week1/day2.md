@@ -1,7 +1,7 @@
 
 # Day 2
 
-- download VSCode (make sure downloaded into and run from applications)
+- Download VSCode (make sure downloaded into and run from applications)
 - cmd line
   - change directory `cd <path>`/ `cd ..`(up a folder)
   - list directory contents `ls`
@@ -44,19 +44,19 @@
     </head>
     ```
 
-  - linking to external style sheet:
+  - Linking to external style sheet:
 
     ```html
     <link rel="stylesheet" type="text/css" href="path to somthing.css" />
     ```
 
-  - adding a title
+  - Adding a title
 
     ```html
     <title>Title Goes Here</title>
     ```
 
-  - parent/child relationship:
+  - Parent/Child relationship:
 
     ```html
     <div id="parent">
@@ -87,6 +87,6 @@
     - [flexboxfroggy](http://flexboxfroggy.com/)
     - [flexboxdefense](http://www.flexboxdefense.com/)
     - [css guide](https://cssreference.io/)
-  - challenge
-    - recreate [Shell Energy homepage](https://www.shellenergy.co.uk) (keep working on this)
+  - Challenge
+    - Recreate [Shell Energy homepage](https://www.shellenergy.co.uk) (keep working on this)
   

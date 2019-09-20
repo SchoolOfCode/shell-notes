@@ -81,9 +81,12 @@ switch (expression) {
 
 ### Rock, Paper, Scissors
 
-- create script that runs in html `<script></script>` tag and prints the winner in console
-- use pseudo-code to plan what cases you need to check
-- convert that pseudo-code into JavaScript
+- Use JavaScript to play RPS
+- For now, write you js in a `<script></script>` tag
+- Compare two choices and print the winner in console
+- Use pseudo-code to plan what cases you need to check
+- Convert that pseudo-code into JavaScript
+- Next, generate a random computer move and allow player to input their move
 
 ### Functions
 
@@ -153,8 +156,8 @@ for (var i = 0; i < 10; i++) {
 
 - Cut out repetition by writing functions
 - Write functions you can reuse
-- use while so you can replay your game
-- link external js file:
+- Use a while loop to play game again
+- Link external js file:
 
   ```html
   <script>
@@ -182,4 +185,4 @@ for (var i = 0; i < 10; i++) {
 
 ### Shell Energy Home Page
 
-- Continue Recreating Shell Energy Website
+- Continue Recreating [Shell Energy Website](https://www.shellenergy.co.uk/)

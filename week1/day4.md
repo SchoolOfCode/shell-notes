@@ -1,7 +1,7 @@
 
 # Day 4
 
-### Functions
+## Functions
 
 ```javascript
 // define a function
@@ -13,13 +13,12 @@ function doCoolThing() {
 doCoolThing(); // prints out "done cool thing!"
 ```
 
-### Arrays and Objects
+## Arrays and Objects
 
-- same underneath
-- `{0:'a', 1:'b', 2:'c'}` is like `['a','b','c']`
-- array methods
+- same underneath - `{0:'a', 1:'b', 2:'c'}` is like `['a','b','c']`
+- array has some differnet methods we will use soon.
 
-### Functional Programming
+## Functional Programming
 
 - Why is functional programming good?
 
@@ -27,7 +26,7 @@ doCoolThing(); // prints out "done cool thing!"
   - General purpose modules can be reusable, which leads to faster development of next programs.
   - The modules of a program can be tested independently, helping to reduce the time spent debugging.
 
-- callbacks
+- Callbacks
 
 ```JavaScript
 var add = function(a, b, doSomething){
@@ -37,7 +36,7 @@ var add = function(a, b, doSomething){
 add(1, 2, function(x){
   console.log(`the result is ${x}`)
 })
-//prints out 3
+//prints out "the result is 3"
 ```
 
 - forEach
@@ -48,11 +47,12 @@ var people = ["harry", "sat", "matt", "frances", "matt"];
 function convertToUpperCase(string) {
   return string.toUpperCase();
 }
+
 people.forEach(convertToUpperCase);
 
 // forEach visits each item in the array and mutates the array directly
 
-console.log(people); // ["HARRY", "SAT", "MATT", "FRANCES", "matt"]
+console.log(people); // ["HARRY", "SAT", "MATT", "FRANCES", "MATT"]
 ```
 
 - map
@@ -63,11 +63,12 @@ var people = ["harry", "sat", "matt", "frances", "matt"];
 function convertToUpperCase(string) {
   return string.toUpperCase();
 }
+
 var capitalisedPeople = people.map(convertToUpperCase);
 
 // map returns an array which is stored in capitalisedPeople
 console.log(people); //["harry", "sat", "matt", "frances", "matt"]
-console.log(capitalisedPeople); // ["HARRY", "SAT", "MATT", "FRANCES", "matt"]
+console.log(capitalisedPeople); // ["HARRY", "SAT", "MATT", "FRANCES", "MATT"]
 ```
 
 - filter
@@ -99,9 +100,8 @@ var numbersTotal = numbers.reduce(add, 0);
 console.log(numbersTotal); // 15
 ```
 
-- mutible/immutible
-- filtering array
-- chaining functions
+- forEach mutates original array, map, filter and reduce return new arrays.
+- because they return an array you can call another method on whats returned
 
 ```javascript
 var list = [1, 5, 6, 7, 2, 3, 4, 8, 9, 10];
@@ -109,15 +109,16 @@ var list = [1, 5, 6, 7, 2, 3, 4, 8, 9, 10];
 function add1(num) {
   return num + 1;
 }
+
 function isGreaterThanFive(num) {
   return num < 5;
 }
 
-// works because map returns you an array which you can then chain another function onto
+// here .filter() is called on the new array that .map() returns and the final result is stored in newList
 var newList = list.map(add1).filter(isGreaterThanFive);
 ```
 
-- Challenge
+- Array Method Challenges
   1. Keep only the force users, and return a new array of their names
   2. Create a new array and into it -> If last name is "Skywalker", their shooting score add 10, else their shooting score minus 10
 
@@ -161,7 +162,7 @@ var personnel = [
 ];
 ```
 
-### Default Paramters
+## Default Parameters
 
 ```javascript
 // instead of
@@ -182,8 +183,10 @@ function getFullName(firstName = "first", lastName = "last") {
 }
 ```
 
-### String Methods
+## String Methods
 
+- .split() example
+  
 ```javascript
 var name = "christiano ronaldo";
 
@@ -192,9 +195,11 @@ name.split("istiano ronal"); // ["chris", "do"]
 name.split(""); // ["c","h","r","i","s","t","i","a","n","o"," ","r","o","n","a","l","d","o"]
 ```
 
-### Spread Operator
+- [More String Methods](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
 
-- for arrays
+## Spread Operator
+
+- with arrays
 
 ```javascript
 var array = [1, 2, 3, 4, 5];
@@ -204,7 +209,7 @@ var newArray = [...array, 6, 7, 8];
 console.log(newArray); // [1,2,3,4,5,6,7,8]
 ```
 
-- for objects
+- with objects
 
 ```javascript
 var luke = {
@@ -217,14 +222,18 @@ var luke = {
 
 var newLuke = {
   ...luke, // spreads out all of luke properties into newLuke
-  pet: "cat"
+  pet: "cat" // adds pet property
 };
 
 newLuke.id === 5; // true
 newLuke.pet === "cat"; // true
 ```
 
-- variable name become key, value becomes value:
+## Variables into Objects
+
+- Variable's name become the key
+- Variable's value becomes value
+- Example:
 
 ```javascript
 var name = "Luke Skywalker";
@@ -235,16 +244,57 @@ var luke = {
   isForceUser
 };
 
-luke.name === "Luke Skywalker"; // true
+console.log(luke) // {name: "Luke Skywalker", isForceUser: true}
+
+// it is the same as:
+var luke = {
+  name: name,
+  isForceUser: isForceUser
+};
 ```
 
-### Code Wars
+## Code Wars
 
-- sign up and start training
+- Sign up and start training!
 - [codewars.com](https://www.codewars.com/);
 
-### DOM (document object model)
+## DOM (document object model)
 
+- When a web page is loaded, the browser creates a Document Object Model of the page.
+- The HTML DOM model is constructed as a tree of Objects
+
+```html
+<html>
+    <head>
+        <title>DOM DOM DOM</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <p>lets learn about the DOM</p>
+    </body>
+</html>
+```
+
+the modal of the html would look something like this`*`:
+
+```javascript
+var document = {
+    head: {
+        title: "DOM DOM DOM"
+    },
+    body:{
+        h1:"Welcome!",
+        p: "lets learn about the DOM"
+    }
+}
+```
+
+`*` slightly oversimplified but you get the idea
+
+### Accesing the DOM with JavaScript
+
+- here we have an unordered list with several list items:
+  
 ```html
 <ul id="list">
   <li class="listItem">dogs</li>
@@ -253,18 +303,31 @@ luke.name === "Luke Skywalker"; // true
   <li class="listItem">rats</li>
   <li class="listItem">fish</li>
 </ul>
+```
 
+- this is our JavaScript:
+
+```javascript
+var list = document.getElementById("list"); //  returns the element with an id of "list"
+
+var listItems = document.getElementsByClassName("listItem"); // returns a node list of things with a class of "listItem"
+```
+
+- calling a function onclick
+
+```html
 <button onclick="doThing()">click to do thing</button>
 ```
 
 ```javascript
-var listItems = document.getElementsByClassName("listItem"); // node list of li
-
-var list = document.getElementById("list"); // ul element
-
+// button will call this function when clicked
 function doThing() {
   console.log("done thing");
 }
 ```
 
-### Make
+## Use DOM manipulation to bring Rock/Paper/Scissors to life
+
+- instead of printing the result to the console
+- use DOM manipulation to display it on the page
+- [All HTML Element Properties](https://www.w3schools.com/jsref/dom_obj_all.asp)
