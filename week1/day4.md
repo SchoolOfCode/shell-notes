@@ -1,4 +1,3 @@
-
 # Day 4
 
 ## Functions
@@ -191,7 +190,7 @@ function getFullName(firstName = "first", lastName = "last") {
 var name = "christiano ronaldo";
 
 name.split(" "); // ["christiano", "ronaldo"]
-name.split("istiano ronal"); // ["chris", "do"]
+name.split("iano ronal"); // ["chris", "do"]
 name.split(""); // ["c","h","r","i","s","t","i","a","n","o"," ","r","o","n","a","l","d","o"]
 ```
 
@@ -244,7 +243,7 @@ var luke = {
   isForceUser
 };
 
-console.log(luke) // {name: "Luke Skywalker", isForceUser: true}
+console.log(luke); // {name: "Luke Skywalker", isForceUser: true}
 
 // it is the same as:
 var luke = {
@@ -265,13 +264,13 @@ var luke = {
 
 ```html
 <html>
-    <head>
-        <title>DOM DOM DOM</title>
-    </head>
-    <body>
-        <h1>Welcome!</h1>
-        <p>lets learn about the DOM</p>
-    </body>
+  <head>
+    <title>DOM DOM DOM</title>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>lets learn about the DOM</p>
+  </body>
 </html>
 ```
 
@@ -279,14 +278,14 @@ the modal of the html would look something like this`*`:
 
 ```javascript
 var document = {
-    head: {
-        title: "DOM DOM DOM"
-    },
-    body:{
-        h1:"Welcome!",
-        p: "lets learn about the DOM"
-    }
-}
+  head: {
+    title: "DOM DOM DOM"
+  },
+  body: {
+    h1: "Welcome!",
+    p: "lets learn about the DOM"
+  }
+};
 ```
 
 `*` slightly oversimplified but you get the idea
@@ -294,7 +293,7 @@ var document = {
 ### Accesing the DOM with JavaScript
 
 - here we have an unordered list with several list items:
-  
+
 ```html
 <ul id="list">
   <li class="listItem">dogs</li>
@@ -335,4 +334,3 @@ function doThing() {
 - instead of printing the result to the console
 - use DOM manipulation to display it on the page
 - call functions with onclick attribute for interactivity
-  
