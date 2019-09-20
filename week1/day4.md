@@ -185,8 +185,8 @@ function getFullName(firstName = "first", lastName = "last") {
 
 ## String Methods
 
-- .split() example
-  
+- `.split()` example
+
 ```javascript
 var name = "christiano ronaldo";
 
@@ -197,7 +197,7 @@ name.split(""); // ["c","h","r","i","s","t","i","a","n","o"," ","r","o","n","a",
 
 - [More String Methods](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods)
 
-## Spread Operator
+## Spread Operator `...`
 
 - with arrays
 
