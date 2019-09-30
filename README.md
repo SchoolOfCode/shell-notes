@@ -10,3 +10,4 @@
 - Week 2
   - [Day 1](./week2/day1.md)
   - [Day 2](./week2/day2.md)
+  - [Day 3](./week2/day3.md)
