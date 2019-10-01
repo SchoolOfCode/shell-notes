@@ -109,3 +109,5 @@ console.log(allOtheItems); // [2, 3, 4, 5]
 console.log(1 < 4 ? "hello" : "goodbye"); // hello
 console.log(1 > 4 ? "hello" : "goodbye"); // goodbye
 ```
+
+[home](../README.md)

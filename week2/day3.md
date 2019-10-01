@@ -225,3 +225,5 @@ function getRandomColor() {
 // this starts our animation loop
 animateRects();
 ```
+
+[home](../README.md)
