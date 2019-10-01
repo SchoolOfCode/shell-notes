@@ -17,3 +17,4 @@
 ## Week 3
 
 - [Day 1](./week3/day1.md)
+- [Day 2](./week3/day2.md)
