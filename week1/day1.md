@@ -1,30 +1,49 @@
 # Day 1
 
-- Introduction to School of Code
+## Intro to School of Code
+
 - Introduction to our schedule (Stand-ups, Energisers, Wrap-ups)
-- Marshmallow Challenge
-  - Best method is to break a problem down and prototype - solutions, not just tackle it all in one go and hope for the best
-- Intro to the Web
-  - IP
-  - UDP and TCP
-  - Packets
-  - DNS
-- Character Building to introduce the syntax of
-  - HTML
-  - CSS
-  - JavaScript
-- Chrome Developer Tools
-  - How to inspect a webpage HTML and CSS
+
+## Marshmallow Challenge
+
+- Best method is to break a problem down and prototype - solutions, not just tackle it all in one go and hope for the best
+
+## Intro to the Web
+
+- IP
+- UDP and TCP
+- Packets
+- DNS
+
+## Character Building to introduce the syntax of
+
 - HTML
-  - Tags
-    - e.g. `h1` - `h6`, `p`, `div`, etc
-  - Semantic HTML
-    - Use a `div` as a last resort, there is usually an element perfectly suited to the job
-  - Attributes
-    - e.g. `class="my-class" id="my-id"`, etc
-  - [HTMLreference.io](https://htmlreference.io/)
 - CSS
-- 3 ways to apply styles
+- JavaScript
+
+## Chrome Developer Tools
+
+- How to inspect a webpage HTML and CSS
+
+## HTML
+
+### Tags
+
+- e.g. `h1` - `h6`, `p`, `div`, etc
+
+### Semantic HTML
+
+- Use a `div` as a last resort, there is usually an element perfectly suited to the job
+
+### Attributes
+
+- e.g. `class="my-class" id="my-id"`, etc
+
+[HTMLreference.io](https://htmlreference.io/)
+
+## CSS
+
+### 3 ways to apply styles
 
 ```html
 <!-- inline styles -->
@@ -44,7 +63,7 @@
 <link rel="stylesheet" type="text/css" href="myStyles.css" />
 ```
 
-- selectors
+### CSS selectors
 
 ```css
 tagName {
@@ -60,22 +79,46 @@ tagName {
 }
 ```
 
-- syntax: `property: value`;
-- properties: `height`, `width`, `color`, `font-size`, etc.
-- advanced selectors: [CSS Diner](https://flukeout.github.io/)
-- positioning
-  - static
-  - relative
-  - absolute
-  - fixed
-  - sticky
-- the box model
-  - content
-  - padding
-  - border
-  - margin
-- Using documentation
-  - Google Stuff!
-  - W3 Schools, MDN
-  - Stack Overflow
-- Recap Challenge: Recreate your twitter and facebook profiles
+### Syntax
+
+```css
+selector {
+  property: value;
+}
+```
+
+### Properties
+
+- `height`
+- `width`
+- `color`
+- `font-size`
+
+### advanced selectors:
+
+[CSS Diner](https://flukeout.github.io/)
+
+### positioning
+
+- static
+- relative
+- absolute
+- fixed
+- sticky
+
+### the box model
+
+- content
+- padding
+- border
+- margin
+
+## Using documentation
+
+- Google Stuff!
+- W3 Schools, MDN
+- Stack Overflow
+
+## Recap Challenge
+
+Recreate your twitter and facebook profiles
