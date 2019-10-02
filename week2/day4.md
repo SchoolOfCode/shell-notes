@@ -1,13 +1,33 @@
 # Day4
 
-## testing
+## Testing
+
+- Keep It Simple
+- Only write code to pass a failing test
+- Use .skip as a TODO list
+- Red, Green, Refactor
 
 ## css variables
 
-## resolving conflicts on github
+```css
+/* declaring */
+:root {
+  --main-bg-color: brown;
+}
+/* using */
+element {
+  background-color: var(--main-bg-color);
+}
+```
 
-## hackathon
+## Pull Requests
 
-- jokeyjokejoke
+- resolving conflicts
+- adding reviewers reviewers
+- branching off and merging in
+
+## Hackathon
+
+- [jokeyjokejoke.com](https://jokeyjokejoke.netlify.com)
 
 [home](../README.md)
