@@ -18,3 +18,4 @@
 
 - [Day 1](./week3/day1.md)
 - [Day 2](./week3/day2.md)
+- [Day 3](./week3/day3.md)
