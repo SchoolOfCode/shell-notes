@@ -1,3 +1,5 @@
+[home](../README.md)|[week1](../week1)|[week2](../week2)|[week3](../week3)
+
 # Day 1
 
 ## Intro to School of Code
@@ -122,5 +124,3 @@ selector {
 ## Recap Challenge
 
 Recreate your twitter and facebook profiles
-
-[home](../README.md)
