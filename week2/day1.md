@@ -1,6 +1,6 @@
 |[home](../README.md)|
 
-# Day 3
+# Day 1
 
 ## Event Listeners
 
