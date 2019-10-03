@@ -1,4 +1,4 @@
-[home](../README.md)|[week1](../week1)|[week2](../week2)|[week3](../week3)
+|[home](../README.md)|
 
 # Day 2
 
@@ -113,5 +113,3 @@
 ## Challenge
 
 - Recreate [Shell Energy homepage](https://www.shellenergy.co.uk) (keep working on this)
-
-[home](../README.md)

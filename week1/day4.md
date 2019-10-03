@@ -1,4 +1,4 @@
-[home](../README.md)|[week1](../week1)|[week2](../week2)|[week3](../week3)
+|[home](../README.md)|
 
 # Day 4
 
@@ -336,5 +336,3 @@ function doThing() {
 - instead of printing the result to the console
 - use DOM manipulation to display it on the page
 - call functions with onclick attribute for interactivity
-
-[home](../README.md)

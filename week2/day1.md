@@ -1,3 +1,5 @@
+|[home](../README.md)|
+
 # Day 3
 
 ## Event Listeners
@@ -90,5 +92,3 @@ console.log("i run afterwards");
   - null
   - undefined
   - NaN
-
-[home](../README.md)

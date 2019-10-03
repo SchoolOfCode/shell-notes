@@ -1,3 +1,5 @@
+|[home](../README.md)|
+
 # Day 3
 
 ## Testing
@@ -225,5 +227,3 @@ function getRandomColor() {
 // this starts our animation loop
 animateRects();
 ```
-
-[home](../README.md)

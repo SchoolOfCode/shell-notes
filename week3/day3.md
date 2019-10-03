@@ -1,3 +1,5 @@
+|[home](../README.md)|
+
 # Day 3
 
 ## Recap for Matt
@@ -93,5 +95,3 @@ function postData() {
   console.log(data)
 }
 ```
-
-[home](../README.md)

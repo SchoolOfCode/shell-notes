@@ -1,4 +1,4 @@
-[home](../README.md)|[week1](../week1)|[week2](../week2)|[week3](../week3)
+|[home](../README.md)|
 
 # Day 3
 
@@ -188,5 +188,3 @@ for (var i = 0; i < 10; i++) {
 ### Shell Energy Home Page
 
 - Continue Recreating [Shell Energy Website](https://www.shellenergy.co.uk/)
-
-[home](../README.md)
