@@ -1,3 +1,5 @@
+[home](../README.md)|[week1](../week1)|[week2](../week2)|[week3](../week3)
+
 # Day 2
 
 - Download VSCode (make sure downloaded into and run from applications)

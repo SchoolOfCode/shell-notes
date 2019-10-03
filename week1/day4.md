@@ -1,3 +1,5 @@
+[home](../README.md)|[week1](../week1)|[week2](../week2)|[week3](../week3)
+
 # Day 4
 
 ## Functions
