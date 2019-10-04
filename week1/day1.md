@@ -2,13 +2,19 @@
 
 # Day 1
 
+---
+
 ## Intro to School of Code
 
 - Introduction to our schedule (Stand-ups, Energisers, Wrap-ups)
 
+---
+
 ## Marshmallow Challenge
 
 - Best method is to break a problem down and prototype - solutions, not just tackle it all in one go and hope for the best
+
+---
 
 ## Intro to the Web
 
@@ -17,15 +23,21 @@
 - Packets
 - DNS
 
+---
+
 ## Character Building to introduce the syntax of
 
 - HTML
 - CSS
 - JavaScript
 
+---
+
 ## Chrome Developer Tools
 
 - How to inspect a webpage HTML and CSS
+
+---
 
 ## HTML
 
@@ -41,7 +53,9 @@
 
 - e.g. `class="my-class" id="my-id"`, etc
 
-[HTMLreference.io](https://htmlreference.io/)
+- [HTMLreference.io](https://htmlreference.io/)
+
+---
 
 ## CSS
 
@@ -115,11 +129,15 @@ selector {
 - border
 - margin
 
+---
+
 ## Using documentation
 
 - Google Stuff!
 - W3 Schools, MDN
 - Stack Overflow
+
+---
 
 ## Recap Challenge
 
